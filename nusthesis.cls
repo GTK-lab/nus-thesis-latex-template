@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nusthesis}[2014/06/06 ECE M.Eng thesis cls file]
+\ProvidesClass{nusthesis}[2023/11/20 NUS thesis cls file}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Class and Packages
@@ -54,15 +54,15 @@
   \RequirePackage{xunicode}
 \fi
 
-\RequirePackage{hyperref}
+\RequirePackage[hyperfootnotes=false]{hyperref}
 \hypersetup{
  linkcolor = DarkBlue,
  citecolor = DarkBlue,
  plainpages = false,
- hyperfootnotes = false,
  hypertexnames = false,
  allbordercolors = white,
- }
+}
+
 \RequirePackage[nameinlink,noabbrev, capitalise]{cleveref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,13 +202,13 @@ degree in any university previously. \\
 \end{center}\newpage}} {}
 
 %Chapfont
-\newcommand{\chapfont}[1]{
-\noindent\textbf{\nohang\begin{Huge}#1\end{Huge}}\vspace*{1cm}\\}
+% \newcommand{\chapfont}[1]{
+% \noindent\textbf{\nohang\begin{Huge}#1\end{Huge}}\vspace*{1cm}\\}
 
 %Acknowledgment
 \newcommand{\acknowledgment}[1]{
 \vspace*{2.75cm}
-\chapfont{Acknowledgments}#1\vfill
+%\chapfont{Acknowledgments}#1\vfill
 \newpage}
 
 %Abstract
@@ -231,8 +231,12 @@ degree in any university previously. \\
 \sectionfont{\raggedright}
 \renewcommand{\chaptername}{CHAPTER}
 \renewcommand{\appendixname}{APPENDIX}
-\renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
+
+\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename \thechapter}{2em}{}{}
+%\renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
 }
+
+\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename \thechapter}{2em}{}{}
 
 %Format text referring to appendices
 \crefname{appsec}{Appendix}{Appendices}

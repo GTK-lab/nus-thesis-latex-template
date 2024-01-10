@@ -1,18 +1,26 @@
-\documentclass{nusthesis}
+\documentclass[for-printing=true,%
+title={This is my title}%
+]{nus-thesis}
 
 % --------------------------------------------------
 % Basic information
 % --------------------------------------------------
-\title{Quad Polarization Wideband Sinuous Antenna Elements and Arrays}
-\author{Ramanan Balakrishnan}
-\qualification{B.Eng. (Hons.), NUS}
-
-\degree{Master of Engineering}
-\university{National University of Singapore}
-\department{Department of Electrical and \\Computer Engineering}
-\submityear{2015}
+%\title{Quad Polarization Wideband Sinuous Antenna Elements and Arrays}
+%\author{Ramanan Balakrishnan}
 
 \date{\today}
+
+
+\ThesisSetup{
+  author = Ramanan Balakrishnan,
+  qualification = {Bachelor of Science, MIT},
+  candidacy = {Doctor of Philosophy},
+  university = National University of Singapore,
+  department = Biological Sciences
+}
+
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
 
 \begin{document}
 
@@ -43,7 +51,7 @@ Let's thank some people here.
 % Table of contents, abstract,
 % lists of tables, figures and symbols
 % --------------------------------------------------
-\tableofcontents
+\tableofcontents{}
 \newpage
 \abstract{
 A section to summarize the main contributions of this thesis.
@@ -219,8 +227,8 @@ end
 % --------------------------------------------------
 % Bibliography
 % --------------------------------------------------
-\bibliographystyle{IEEETran}
-\bibliography{IEEEabrv,references_list}
+\bibliographystyle{abbrv}
+\bibliography{refs}
 
 % --------------------------------------------------
 % Appendix A

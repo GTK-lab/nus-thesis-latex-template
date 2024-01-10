@@ -1,0 +1,23 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{Contents}}{9}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Abstract}}{11}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-3}{List of Tables}}{13}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{List of Tables}}{xiii}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-5}{List of Figures}}{15}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{List of Figures}}{xv}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-7}{ListofSymbols}}{17}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-8}{ListofAbbreviations}}{19}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-70001}{QQ2-1-9}{The basics}}{3}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-80001.1}{QQ2-1-10}{A simple section}}{3}\relax 
+\doTocEntry\tocsubsection{1.1.1}{\csname a:TocLink\endcsname{1}{x1-90001.1.1}{QQ2-1-11}{A sub-section}}{3}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-100002}{QQ2-1-12}{Figures, sub-figures and more}}{5}\relax 
+\doTocEntry\toclof{2.1}{\csname a:TocLink\endcsname{1}{x1-10001r1}{}{\ignorespaces Captions are also possible for figures.\relax }}{figure}\relax 
+\doTocEntry\toclof{2.2}{\csname a:TocLink\endcsname{1}{x1-10004r2}{}{\ignorespaces A common caption is shown for both. Use (a) and (b) to refer to the subfigures.\relax }}{figure}\relax 
+\doTocEntry\toclof{2.3}{\csname a:TocLink\endcsname{1}{x1-10011r3}{}{\ignorespaces A full page of figures!\relax }}{figure}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-110003}{QQ2-1-16}{Let's talk tables}}{17}\relax 
+\doTocEntry\toclot{3.1}{\csname a:TocLink\endcsname{1}{x1-11001r1}{}{\ignorespaces Sequential modes in four-arm sinuous antennas.\relax }}{table}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-120004}{QQ2-1-18}{Equations and code}}{23}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-13000}{QQ2-1-19}{Bibliography}}{25}\relax 
+\doTocEntry\tocchapter{}{\csname a:TocLink\endcsname{1}{Q1-1-20}{}{Bibliography}}{25}\relax 
+\doTocEntry\tocchapter{A}{\csname a:TocLink\endcsname{1}{x1-14000A}{QQ2-1-21}{Some additional data that might be useful}}{27}\relax 
+\par 
