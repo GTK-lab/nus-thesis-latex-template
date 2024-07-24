@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nusthesis}[2023/11/20 NUS thesis cls file}
+\ProvidesClass{nusthesis}[2023/11/20 NUS thesis cls file]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Class and Packages
