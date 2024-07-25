@@ -41,7 +41,7 @@
 \RequirePackage[section]{placeins}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[titletoc]{appendix}
-\RequirePackage{titlesec}
+\RequirePackage[raggedright]{titlesec}
 \RequirePackage{mdwtab}
 \RequirePackage{caption}
 \RequirePackage{floatrow}
