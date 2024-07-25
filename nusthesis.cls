@@ -233,7 +233,7 @@ degree in any university previously. \\
 \renewcommand{\chaptername}{CHAPTER}
 \renewcommand{\appendixname}{APPENDIX}
 
-\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename \thechapter}{2em}{}{}
+\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename~\thechapter}{2em}{}{}
 %\renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
 }
 
