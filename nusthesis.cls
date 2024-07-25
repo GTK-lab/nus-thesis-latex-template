@@ -237,7 +237,7 @@ degree in any university previously. \\
 %\renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
 }
 
-\titleformat{\chapter}[display]{\mdseries\Huge\setstretch{1.4}{\chaptertitlename~\thechapter}{2em}{}{}
+\titleformat{\chapter}[display]{\mdseries\Huge\setstretch{1.4}}{\chaptertitlename~\thechapter}{2em}{}{}
 
 
 %Format text referring to appendices
