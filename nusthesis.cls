@@ -12,7 +12,8 @@
 \LoadClass{book}
 %Packages
 %\RequirePackage{times}
-\RequirePackage[]{stix}
+\RequirePackage{libertinus}
+\RequirePackage[]{stix2}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
 \RequirePackage{ifxetex}
