@@ -21,7 +21,7 @@
 \RequirePackage[]{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{setspace}
-\RequirePackage{sectsty}
+%\RequirePackage{sectsty}
 \RequirePackage{ifthen}
 \RequirePackage[top=1in, bottom=1in, left=1.5in, right=1.5in]{geometry}
 \RequirePackage{amsmath}
