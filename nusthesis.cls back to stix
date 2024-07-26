@@ -13,7 +13,7 @@
 %Packages
 %\RequirePackage{times}
 \RequirePackage{libertinus}
-\RequirePackage[]{stix2}
+\RequirePackage[]{stix}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
 \RequirePackage{ifxetex}
