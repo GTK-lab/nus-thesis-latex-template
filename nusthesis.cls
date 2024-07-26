@@ -48,8 +48,8 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
-  \RequirePackage[sans]{libertinus-type1}
   \RequirePackage[]{stix} % loads textcomp
+  \RequirePackage[sans]{libertinus-type1}
 \else % if luatex or xelatex
   \RequirePackage{fontspec}
   \RequirePackage{xunicode}
