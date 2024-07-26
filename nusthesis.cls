@@ -12,7 +12,7 @@
 \LoadClass{book}
 %Packages
 %\RequirePackage{times}
-\RequirePackage{libertinus}
+\RequirePackage[sans]{libertinus-type1}
 \RequirePackage[]{stix}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
