@@ -11,8 +11,7 @@
 \PassOptionsToClass{openright}{book}
 \LoadClass{book}
 %Packages
-%\RequirePackage{times}
-\RequirePackage[]{stix}
+
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
 \RequirePackage{ifxetex}
@@ -49,9 +48,9 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
-\RequirePackage[sans]{libertinus-type1}
-%\RequirePackage{textcomp} % provides euro and other symbols
-  \else % if luatex or xelatex
+  \RequirePackage[sans]{libertinus-type1}
+  \RequirePackage[]{stix} % loads textcomp
+\else % if luatex or xelatex
   \RequirePackage{fontspec}
   \RequirePackage{xunicode}
 \fi
