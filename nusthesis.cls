@@ -17,7 +17,7 @@
 \RequirePackage{color}
 \RequirePackage{ifxetex}
 \RequirePackage{ifluatex}
-\RequirePackage[svgnames]{xcolor}
+\RequirePackage[svgnames,table]{xcolor}
 \RequirePackage[]{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{setspace}
