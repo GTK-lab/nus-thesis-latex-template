@@ -12,7 +12,6 @@
 \LoadClass{book}
 %Packages
 %\RequirePackage{times}
-\RequirePackage[sans]{libertinus-type1}
 \RequirePackage[]{stix}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
@@ -50,7 +49,8 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
-  \RequirePackage{textcomp} % provides euro and other symbols
+\RequirePackage[sans]{libertinus-type1}
+%\RequirePackage{textcomp} % provides euro and other symbols
   \else % if luatex or xelatex
   \RequirePackage{fontspec}
   \RequirePackage{xunicode}
