@@ -10,11 +10,10 @@
 \PassOptionsToClass{a4paper}{\c__classname_base_class_str}
 \PassOptionsToClass{12pt}{\c__classname_base_class_str}
 
-
 \keys_define:nn { nus-thesis }
 {
-  , for-printing .bool_set:N = \l__classname_for_printing_bool
-  , for-printing .initial:n = { false }
+  , openright .bool_set:N = \l__classname_openright_bool
+  , openright .initial:n = { false }
   , author .tl_set:N = \l__thesis_author_tl
   , author .code:n = { \author{#1} }
   , author .initial:n = { (author~undefined)  }
@@ -25,13 +24,13 @@
   , university .initial:n = { National~University~of~Singapore }
   , department .tl_set:N = \l__thesis_department_tl
   , department .initial:n = { (department) }
+  , candidacy .tl_set:N = \l__thesis_candidacy_tl
+  , candidacy .initial:n = { (candidacy) }
   , submission-year .tl_set:N = \l__thesis_year_tl
   , submission-year .initial:n =  { \number\year }
   , qualification .tl_set:N = \l__thesis_qualification_tl
   , qualification .initial:n = { (qualification undefined)  }
   , qualification .code:n = {\qualification{#1}}
-  , candidacy .tl_set:N = \l__thesis_candidacy_tl
-  , candidacy .initial:n =  { (candidacy) }
   % \DeclareDefaultOption
   , unknown .code:n =
   {
@@ -46,7 +45,7 @@
 
 \ProcessKeysOptions { nus-thesis }
 
-\bool_if:NTF \l__classname_for_printing_bool
+\bool_if:NTF \l__classname_openright_bool
 {
   \PassOptionsToClass{openright}{\c__classname_base_class_str}
 }{
@@ -133,7 +132,7 @@
 % Defaults of Variables
 %\@ifundefined{@degree}{\gdef\@degree{Master of Engineering}}{}
 \gdef\@subtitle{\space}
-\gdef\@qualification{B.Eng. (Hons), NUS}
+\gdef\@qualification{\relax}
 \gdef\@keywords{\space}
 \gdef\nus@abbrev{\space Test \space MAC }
 
@@ -213,7 +212,7 @@
 \@ifundefined{titlepagebody}{
   \newcommand{\titlepagebody}{
     \begin{center}\hyphenpenalty=10000
-      \large\uppercase\expandafter{{\bfseries\@author}}\\ (\textit{\expandafter{\@qualification}})
+      \large\uppercase\expandafter{{\bfseries\@author}}\\ \textit{\expandafter{\@qualification}}
     \end{center}}}{}
 
 % Title Page Footer
@@ -221,7 +220,7 @@
   \newcommand{\titlepagefooter}{\large\bfseries\uppercase\expandafter{
       \textsomels{A~Thesis~submitted~
         for~the~Degree~of~\\\uppercase\expandafter{\l__thesis_candidacy_tl}\\ Department~of~ \uppercase\expandafter{\l__thesis_department_tl}\\ \uppercase\expandafter{\l__thesis_university_tl}}\\ 
-      \vspace*{2cm}\l__thesis_year_tl
+      \vspace*{2cm}\l__thesis_year_tl\\
     }}}{}
 
 % Declaration Page
@@ -321,8 +320,8 @@
 % and list of tables; use same definition using \@starttoc,
 % however default extension is now .los
 % 
-\def\losymbolsname{List of Symbols}
-\def\loabbrevname{List of Abbreviations}
+\def\losymbolsname{List~of~Symbols}
+\def\loabbrevname{List~of~Abbreviations}
 \def\listofsymbolsnabbrev{
   \chapter*{\losymbolsname \@mkboth
     {\uppercase{\losymbolsname}}{\uppercase{\losymbolsname}}}

@@ -36,7 +36,7 @@
 \RequirePackage{pbox}
 \RequirePackage{pdflscape}
 \RequirePackage{pstricks}
-\RequirePackage{minitoc}
+%\RequirePackage{minitoc}
 \RequirePackage{acronym}
 \RequirePackage[section]{placeins}
 \RequirePackage[nottoc]{tocbibind}
