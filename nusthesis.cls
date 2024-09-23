@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{nusthesis}[2023/11/20 NUS thesis cls file}
+\ProvidesClass{nusthesis}[2023/11/20 NUS thesis cls file]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Class and Packages
@@ -11,17 +11,16 @@
 \PassOptionsToClass{openright}{book}
 \LoadClass{book}
 %Packages
-%\RequirePackage{times}
-\RequirePackage[]{stix}
+
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
 \RequirePackage{ifxetex}
 \RequirePackage{ifluatex}
-\RequirePackage[svgnames]{xcolor}
+\RequirePackage[svgnames,table]{xcolor}
 \RequirePackage[]{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{setspace}
-\RequirePackage{sectsty}
+%\RequirePackage{sectsty}
 \RequirePackage{ifthen}
 \RequirePackage[top=1in, bottom=1in, left=1.5in, right=1.5in]{geometry}
 \RequirePackage{amsmath}
@@ -41,6 +40,7 @@
 \RequirePackage[section]{placeins}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[titletoc]{appendix}
+\RequirePackage[raggedright]{titlesec}
 \RequirePackage{mdwtab}
 \RequirePackage{caption}
 \RequirePackage{floatrow}
@@ -48,8 +48,9 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
-  \RequirePackage{textcomp} % provides euro and other symbols
-  \else % if luatex or xelatex
+  \RequirePackage[]{stix} % loads textcomp
+  \RequirePackage[sans]{libertinus-type1}
+\else % if luatex or xelatex
   \RequirePackage{fontspec}
   \RequirePackage{xunicode}
 \fi
@@ -231,12 +232,13 @@ degree in any university previously. \\
 \sectionfont{\raggedright}
 \renewcommand{\chaptername}{CHAPTER}
 \renewcommand{\appendixname}{APPENDIX}
-
-\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename \thechapter}{2em}{}{}
+%%% make the titles a little narrower
+\titleformat{\chapter}[display]{\mdseries\Huge\setstretch{1.5}}{\chaptertitlename~\thechapter}{2em}{}{}
 %\renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
 }
 
-\titleformat{\chapter}[display]{\mdseries\Huge}{\chaptertitlename \thechapter}{2em}{}{}
+\titleformat{\chapter}[display]{\mdseries\Huge\setstretch{1.5}}{\chaptertitlename~\thechapter}{2em}{}{}
+
 
 %Format text referring to appendices
 \crefname{appsec}{Appendix}{Appendices}
