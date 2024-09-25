@@ -206,20 +206,28 @@ degree in any university previously. \\
 % \newcommand{\chapfont}[1]{
 % \noindent\textbf{\nohang\begin{Huge}#1\end{Huge}}\vspace*{1cm}\\}
 
-%Acknowledgment
-\newcommand{\acknowledgment}[1]{
-\vspace*{2.75cm}
-%\chapfont{Acknowledgments}#1\vfill
-\newpage}
+
+\newenvironment{dedication}{
+  \null\vfill
+  \begin{center}\itshape\Large
+  }{
+  \end{center}
+  \vfill\null
+}
+
+\newcommand{\dedicate}[1]{\begin{dedication}#1\end{dedication}}
+
+% Convenient for short dedication
 
 \newenvironment{acknowledgements}%
 {
   \phantomsection\addcontentsline{toc}{chapter}{Acknowledgements}
+  \vfill
   \begin{center}
     {\large \bfseries Acknowledgements}
     \end{center}
 }
-{\clearpage}
+{\vfill\clearpage}
 
 
 %Abstract
