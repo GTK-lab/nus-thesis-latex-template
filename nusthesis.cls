@@ -37,7 +37,7 @@
 \RequirePackage{pstricks}
 %\RequirePackage{minitoc}
 \RequirePackage{acronym}
-\RequirePackage[section]{placeins}
+\item \RequirePackage[section]{placeins}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[titletoc]{appendix}
 \RequirePackage[raggedright]{titlesec}
@@ -73,7 +73,7 @@
 \doublespacing
 
 %Plain Page Style
-\pagestyle{plain}
+%\pagestyle{plain}
 
 %Labels Declaration
 \graphicspath{ {./images/} }
@@ -211,6 +211,16 @@ degree in any university previously. \\
 \vspace*{2.75cm}
 %\chapfont{Acknowledgments}#1\vfill
 \newpage}
+
+\newenvironment{acknowledgements}%
+{
+  \phantomsection\addcontentsline{toc}{chapter}{Acknowledgements}
+  \begin{center}
+    {\large \bfseries Acknowledgements}
+    \end{center}
+}
+{\clearpage}
+
 
 %Abstract
 %\newcommand{\abstract}[1]{
