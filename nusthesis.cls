@@ -37,7 +37,7 @@
 \RequirePackage{pstricks}
 %\RequirePackage{minitoc}
 \RequirePackage{acronym}
-\item \RequirePackage[section]{placeins}
+\RequirePackage[section]{placeins}
 \RequirePackage[nottoc]{tocbibind}
 \RequirePackage[titletoc]{appendix}
 \RequirePackage[raggedright]{titlesec}
