@@ -48,7 +48,7 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
   \RequirePackage[utf8]{inputenc}
-  \RequirePackage[]{stix} % loads textcomp
+%  \RequirePackage[]{stix} % loads textcomp
   \RequirePackage[sans]{libertinus-type1}
 \else % if luatex or xelatex
   \RequirePackage{fontspec}
@@ -221,7 +221,7 @@ degree in any university previously. \\
 
 \newenvironment{acknowledgements}%
 {
-  \phantomsection\addcontentsline{toc}{chapter}{Acknowledgements}
+  \phantomsection\addcontentsline{toc}{section}{Acknowledgements}
   \vfill
   \begin{center}
     {\large \bfseries Acknowledgements}
