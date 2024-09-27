@@ -50,6 +50,7 @@
   \RequirePackage[utf8]{inputenc}
   \RequirePackage[scaled=0.9,varl]{inconsolata}
   \RequirePackage[mono=false]{libertinus-type1}  
+  \RequirePackage{libertinust1math}  
 %  \RequirePackage[]{stix} % loads textcomp
 %  \RequirePackage[sans]{libertinus-type1}
 
@@ -98,7 +99,7 @@
 \def\supervisor#1{\gdef\@supervisor{#1}}
 \def\subtitle#1{\gdef\@subtitle{#1}}
 \def\submityear#1{\gdef\@submityear{#1}}
-\def\degree#1{\gdef\@degree{#1}}
+\def\Degree#1{\gdef\@degree{#1}}
 \def\department#1{\gdef\@department{#1}}
 \def\university#1{\gdef\@university{#1}}
 \def\qualification#1{\gdef\@qualification{#1}}
@@ -137,7 +138,7 @@
 }
 
 % Figure caption
-\renewcommand{\figurename}{Fig.}
+\renewcommand{\figurename}{Figure}
 \captionsetup[figure]{
   labelsep=period,
 }
