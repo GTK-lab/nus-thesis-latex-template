@@ -225,7 +225,7 @@ degree in any university previously. \\
 
 \newenvironment{acknowledgements}%
 {
-  \phantomsection\addcontentsline{toc}{section}{Acknowledgements}
+  \phantomsection\addcontentsline{toc}{chapter}{Acknowledgements}
   \vfill
   \begin{center}
     {\large \bfseries Acknowledgements}
