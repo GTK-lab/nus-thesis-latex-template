@@ -25,7 +25,6 @@
 \RequirePackage[top=1in, bottom=1in, left=1.5in, right=1.5in]{geometry}
 \RequirePackage{amsmath}
 \RequirePackage{lipsum}
-\RequirePackage{subfig}
 \RequirePackage{longtable}
 \RequirePackage{booktabs}
 \RequirePackage{mathtools}
@@ -42,6 +41,7 @@
 \RequirePackage[titletoc]{appendix}
 \RequirePackage[raggedright]{titlesec}
 \RequirePackage{mdwtab}
+\RequirePackage{subcaption}
 \RequirePackage{caption}
 \RequirePackage{floatrow}
 
